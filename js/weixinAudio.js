@@ -190,7 +190,7 @@
             '</div>' +
             
             '<div class="audio_info_area">' +
-              '<div class="audio_title"><img src="../img/title'+'{{#title}}'+'.png"></div>' +
+              '<div class="audio_title"><img src="../img/title'+'{{#title}}'+'.png" width="100%"></div>' +
               '<div class="progress_bar">' +
                 '<span class="audio_progress " style="width: 0%;"></span>' +
                 '<span class="audio_progress_handle"></span>' +
