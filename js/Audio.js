@@ -29,13 +29,15 @@
     init: function() {
       var _this = this;
       _this.events();
+
     },
     play: function() {
       var _this = this;
-        $(this.$audio_area ).css("background-image","url(../img/pause_btn.png)");
+
+        $(this.$audio_area).css("background-image","url(../img/pause_btn.png)");
       if (_this.currentState === "play") {
         _this.pause();
-          $(this.$audio_area ).css("background-image","url(../img/play_btn.png)");
+          $(this.$audio_area).css("background-image","url(../img/play_btn.png)");
         return;
       }
       _this.Audio.play();
@@ -63,6 +65,9 @@
           updateTime;
       _this.$audio_area.on('click', function() {
         _this.play();
+
+         // console.log($(this.$audio_area))
+
         if (!updateTime) {
           _this.updateTotalTime();
           updateTime = true;
@@ -98,6 +103,8 @@
       if (_this.Audio.ended) {
         _this.pause();
           $(this.$audio_area ).css("background-image","url(../img/play_btn.png)");
+          // console.log(this.$context)
+
       }
     },
 
